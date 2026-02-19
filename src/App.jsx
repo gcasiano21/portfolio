@@ -35,22 +35,10 @@ const projects = [
     link: "https://github.com/gcasiano21/Bagged",
   },
   {
-    title: "LoR Database Filter Program",
-    tech: "Java, MySQL",
-    description: "Built a CLI tool to simulate combat and filter cards in Legends of Runeterra. Demonstrated SQL integration and object-oriented design.",
-    link: "https://github.com/gcasiano21/LoR-Database-Filter-Program",
-  },
-  {
     title: "Pong",
     tech: "Python, Pygame",
     description: "Developed a classic Pong game implementing real-time controls, collision detection, and game loop architecture using the Pygame library.",
     link: "https://github.com/gcasiano21/Pong",
-  },
-  {
-    title: "LiftLogr",
-    tech: "Java",
-    description: "Developed an Android mobile app allowing users to track their lifting routines, nutritional intake, and cardio.",
-    link: "https://github.com/gcasiano21/LiftLogr",
   },
 ];
 
@@ -103,19 +91,25 @@ export default function App() {
           <p>GPA: 3.63</p>
         </section>
 
-        <section id="experience">
-          <h2>Work Experience</h2>
-          {experiences.map((e) => (
-            <ExperienceCard key={e.role + e.company} {...e} />
+        <h2 id="experience">Work Experience</h2>
+        <div className="timeline">
+          {experiences.map((e, i) => (
+            <ExperienceCard
+              key={i}
+              years={e.years}
+              role={e.role}
+              company={e.company}
+              responsibilities={e.responsibilities}
+            />
           ))}
-        </section>
+        </div>
 
-        <section id="projects">
-          <h2>Projects</h2>
-          {projects.map((p) => (
-            <ProjectCard key={p.title} {...p} />
+        <h2 id="projects">Projects</h2>
+        <div className="card-grid">
+          {projects.map((p, i) => (
+            <ProjectCard key={i} {...p} />
           ))}
-        </section>
+        </div>
 
       </main>
       <Footer />
