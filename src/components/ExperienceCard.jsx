@@ -7,8 +7,8 @@ export default function ExperienceCard({ role, company, years, responsibilities 
       </div>
       <h4>{company}</h4>
       <ul>
-        {responsibilities.map((b, i) => (
-          <li key={i}>{b}</li>
+        {responsibilities.map((resp, index) => (
+          <li key={index}>{resp}</li>
         ))}
       </ul>
     </div>
