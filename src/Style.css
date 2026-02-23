@@ -282,6 +282,8 @@ footer a:hover {
   flex-direction: column;
   justify-content: center;
   gap: 0.75rem;
+  align-items: center;
+  text-align: center;
 }
 
 .project-content h3 {
@@ -304,7 +306,7 @@ footer a:hover {
 
 .project-content a {
   display: inline-block;
-  align-self: flex-start;
+  align-self: center;
   margin-top: 0.5rem;
   padding: 0.45rem 1.2rem;
   background: linear-gradient(135deg, #6366f1, #8b5cf6);
@@ -319,6 +321,26 @@ footer a:hover {
 .project-content a:hover {
   background: linear-gradient(135deg, #8b5cf6, #6366f1);
   transform: translateY(-2px);
+}
+
+.project-technologies {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.project-technologies::before {
+  content: "";
+}
+
+.project-technologies span {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: white;
+  padding: 0.25rem 0.8rem;   
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 0.8rem;         
+  margin: 0.1rem 0;          
 }
 
 .timeline {

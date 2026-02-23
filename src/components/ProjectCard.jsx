@@ -19,7 +19,11 @@ export default function ProjectCard({ title, description, technologies, link, im
 
         <div className="project-content">
           <h3>{title}</h3>
-          <p><em>{technologies}</em></p>
+          <p className="project-technologies">
+            {technologies.split(", ").map((tech, i) => (
+              <span key={i}>{tech}</span>
+            ))}
+          </p>
           <p>{description}</p>
           <a href={link} target="_blank" rel="noopener noreferrer">
             View Project
