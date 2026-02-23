@@ -1,14 +1,37 @@
-export default function ProjectCard({ title, description, technologies, link }) {
+import { useState } from "react";
+
+export default function ProjectCard({ title, description, technologies, link, image }) {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <section className="project-card">
-       <h3>{title}</h3>
-        <p><em>{technologies}</em></p>
-        <p>{description}</p>
-        <p>
+    <>
+      <section className="project-card">
+        {image && (
+          <div className="project-image-container">
+            <img
+              src={image}
+              alt={title}
+              onClick={() => setIsOpen(!isOpen)}
+              style={{ cursor: "pointer" }}
+            />
+          </div>
+        )}
+
+        <div className="project-content">
+          <h3>{title}</h3>
+          <p><em>{technologies}</em></p>
+          <p>{description}</p>
           <a href={link} target="_blank" rel="noopener noreferrer">
             View Project
           </a>
-        </p>
-    </section>
+        </div>
+      </section>
+
+      {isOpen && (
+        <div className="project-image-overlay" onClick={() => setIsOpen(false)}>
+          <img src={image} alt={title} />
+        </div>
+      )}
+    </>
   );
 }

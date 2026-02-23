@@ -18,27 +18,30 @@ const sections = [
 const projects = [
   {
     title: "Thea’s Pantry Capstone",
-    tech: "Node.js, MongoDB, Docker, RabbitMQ, Vue.js",
+    technologies: "Node.js, MongoDB, Docker, RabbitMQ, Vue.js",
     description: "Contributed to a full-stack guest information system for a campus food pantry using microservices. Primarily developed the backend logging system utilizing RabbitMQ.",
     link: "https://gitlab.com/LibreFoodPantry/client-solutions/theas-pantry",
   },
   {
     title: "NextUp",
-    tech: "React (TypeScript), C#, Firestore",
+    technologies: "React (TypeScript), C#, Firestore",
     description: "Community-driven web app developed as part of an hackathon. The app allows users to share their favorite TV shows, movies, books, and music and discover recommendations from others.",
     link: "https://github.com/gcasiano21/NextUp",
+    image: "images/NextUp.png",
   },
   {
     title: "Bagged",
-    tech: "JavaScript, React Native, Expo",
+    technologies: "JavaScript, React Native, Expo",
     description: "Mobile app for disc golf players to track the discs in their bag, log throws with max and average distances, and receive personalized disc recommendations based on bag composition.",
     link: "https://github.com/gcasiano21/Bagged",
+    image: "images/Bagged.png",
   },
   {
     title: "Pong",
-    tech: "Python, Pygame",
+    technologies: "Python, Pygame",
     description: "Developed a classic Pong game implementing real-time controls, collision detection, and game loop architecture using the Pygame library.",
     link: "https://github.com/gcasiano21/Pong",
+    image: "images/pong.png",
   },
 ];
 
