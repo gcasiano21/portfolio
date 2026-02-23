@@ -25,7 +25,7 @@ const projects = [
   {
     title: "NextUp",
     technologies: "React (TypeScript), C#, Firestore",
-    description: "Community-driven web app developed as part of an hackathon. The app allows users to share their favorite TV shows, movies, books, and music and discover recommendations from others.",
+    description: "Community-driven web app that allows users to share their favorite TV shows, movies, books, and music and discover recommendations from others.",
     link: "https://github.com/gcasiano21/NextUp",
     image: "images/NextUp.png",
   },
