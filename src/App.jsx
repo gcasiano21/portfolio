@@ -34,7 +34,7 @@ const projects = [
     title: "Thea’s Pantry Capstone",
     technologies: "Node.js, MongoDB, Docker, RabbitMQ, Vue.js",
     description: "Contributed to a full-stack guest information system for a campus food pantry using microservices. Primarily developed the backend logging system utilizing RabbitMQ.",
-    link: "https://gitlab.com/LibreFoodPantry/client-solutions/theas-pantry",
+    link: "https://gitlab.com/LibreFoodPantry/client-solutions/theas-pantry/guestinfosystem",
   },
   {
     title: "Pong",
