@@ -63,7 +63,7 @@ const experiences = [
     role: "Junior Software Engineer",
     company: "Web Surfing Studios (Remote)",
     years: "September 2025 – Present",
-    description: "Full-stack software engineering in C# / .NET, React, AWS, and MySQL. Contributed to backend architecture improvements by refactoring controllers, clarifying naming conventions, and updating dependencies to support cleaner, maintainable code. Implemented new API endpoints and business logic, including enforcing user service-creation limits. Enhanced UI/UX by modernizing dashboards and integrating icon-based status indicators."
+    description: "Full-stack software engineering in C# / .NET, React, AWS, and MySQL. Contributed to backend architecture improvements by refactoring controllers, clarifying naming conventions, and updating dependencies to support cleaner, maintainable code. Implemented new API endpoints and logic, including enforcing user service-creation limits. Enhanced UI/UX by modernizing dashboards and integrating icon-based status indicators."
   },
   {
     role: "Systems Analyst",
