@@ -98,7 +98,7 @@ const skills = [
   },
   {
     category: "Version Control",
-    items: ["Git", "GitHub", "Azure DevOps", "GitLab", "Gitea"]
+    items: ["Git", "GitHub", "GitLab", "Gitea"]
   },
   {
     category: "DevOps",
