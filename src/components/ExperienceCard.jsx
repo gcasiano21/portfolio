@@ -1,4 +1,4 @@
-export default function ExperienceCard({ role, company, years, responsibilities }) {
+export default function ExperienceCard({ role, company, years, description }) {
   return (
     <div className="timeline-card">
       <div className="timeline-header">
@@ -6,11 +6,7 @@ export default function ExperienceCard({ role, company, years, responsibilities 
         <span className="timeline-date">{years}</span>
       </div>
       <h4>{company}</h4>
-      <ul>
-        {responsibilities.map((resp, index) => (
-          <li key={index}>{resp}</li>
-        ))}
-      </ul>
+      <p className="timeline-description">{description}</p>
     </div>
   );
 }

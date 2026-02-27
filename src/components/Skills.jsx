@@ -1,12 +1,18 @@
-export default function SkillsList({ id, title, skills }) {
+export default function SkillsGrid({ skills }) {
   return (
-    <section id={id}>
-      <h2>{title}</h2>
-      <div className="skills-list">
-        {skills.map((skill, index) => (
-          <span key={index} className="skill">{skill}</span>
+      <div className="skills-grid">
+        {skills.map((group, index) => (
+          <div key={index} className="skills-card">
+            <h3>{group.category}</h3>
+            <div className="skills-list">
+              {group.items.map((skill, i) => (
+                <span key={i} className="skill">
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
         ))}
       </div>
-    </section>
   );
 }
