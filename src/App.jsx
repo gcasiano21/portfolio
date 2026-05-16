@@ -60,15 +60,21 @@ const projects = [
 
 const experiences = [
   {
+    role: "Junior Software Developer",
+    company: "The Training Associates",
+    years: "April 2026 – Present",
+    description: "Full-stack development in C# / .NET, React, and MS SQL Server. Focused on backend work within a stored-procedure-driven architecture, including updating and debugging SQL Server stored procedures and supporting related API behavior in .NET. Spent significant time troubleshooting and resolving frontend issues in React and making targeted UI fixes to improve stability and consistency. Worked across the stack to support feature updates, resolve bugs, and maintain reliable integration between frontend and backend systems."
+  },
+  {
     role: "Junior Software Engineer",
     company: "Web Surfing Studios (Remote)",
-    years: "September 2025 – Present",
-    description: "Full-stack software engineering in C# / .NET, React, AWS, and MySQL. Contributed to backend architecture improvements by refactoring controllers, clarifying naming conventions, and updating dependencies to support cleaner, maintainable code. Implemented new API endpoints and logic, including enforcing user service-creation limits. Enhanced UI/UX by modernizing dashboards and integrating icon-based status indicators."
+    years: "September 2025 – April 2026",
+    description: "Full-stack software engineering in C# / .NET, React, and MS SQL Server. Contributed to backend architecture improvements by refactoring controllers, clarifying naming conventions, and updating dependencies to support cleaner, maintainable code. Implemented new API endpoints and logic, including enforcing user service-creation limits. Enhanced UI/UX by modernizing dashboards and integrating icon-based status indicators."
   },
   {
     role: "Systems Analyst",
     company: "Blue Cross Blue Shield of Massachusetts (Boston, MA)",
-    years: "June 2025 – Present",
+    years: "June 2025 – April 2026",
     description:"Performed data validation and systems analysis for enterprise healthcare applications using SQL and Python. Developed Python scripts to generate large-scale test datasets and automate QA workflows, reducing manual testing effort and accelerating validation cycles. Investigated production issues through log analysis, SQL querying, and user-flow tracing to reproduce defects and support engineering fixes. Partnered closely with engineers to clarify requirements, edge cases, and business logic for new system enhancements."
   },
   {
