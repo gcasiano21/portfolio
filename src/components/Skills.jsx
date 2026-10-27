@@ -1,18 +1,18 @@
-export default function SkillsGrid({ skills }) {
+import { tagColor } from "../data/tagColors";
+
+export default function SkillsList({ skills }) {
   return (
-      <div className="skills-grid">
-        {skills.map((group, index) => (
-          <div key={index} className="skills-card">
-            <h3>{group.category}</h3>
-            <div className="skills-list">
-              {group.items.map((skill, i) => (
-                <span key={i} className="skill">
-                  {skill}
-                </span>
-              ))}
-            </div>
+    <div className="skills-section">
+      {skills.map((group) => (
+        <div key={group.category} className="skills-group">
+          <span className="skills-category">{group.category}</span>
+          <div className="skills-tags">
+            {group.items.map((skill) => (
+              <span key={skill} className={`tag tag-${tagColor(skill)}`}>{skill}</span>
+            ))}
           </div>
-        ))}
-      </div>
+        </div>
+      ))}
+    </div>
   );
 }

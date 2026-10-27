@@ -1,41 +1,40 @@
-import { useState } from "react";
+import { Link } from "react-router-dom";
+import { tagColor } from "../data/tagColors";
 
-export default function ProjectCard({ title, description, technologies, link, image }) {
-  const [isOpen, setIsOpen] = useState(false);
-
+export default function ProjectCard({ slug, title, description, tags, link, linkLabel, image, live }) {
   return (
-    <>
-      <section className="project-card">
-        {image && (
-          <div className="project-image-container">
-            <img
-              src={image}
-              alt={title}
-              onClick={() => setIsOpen(!isOpen)}
-              style={{ cursor: "pointer" }}
-            />
-          </div>
-        )}
-
-        <div className="project-content">
-          <h3>{title}</h3>
-          <p className="project-technologies">
-            {technologies.split(", ").map((tech, i) => (
-              <span key={i}>{tech}</span>
-            ))}
-          </p>
-          <p>{description}</p>
-          <a href={link} target="_blank" rel="noopener noreferrer">
-            View Project
-          </a>
-        </div>
-      </section>
-
-      {isOpen && (
-        <div className="project-image-overlay" onClick={() => setIsOpen(false)}>
+    <div className="project-card">
+      {image ? (
+        <div className="project-thumb">
           <img src={image} alt={title} />
         </div>
+      ) : (
+        <div className="project-thumb-empty" />
       )}
-    </>
+      <div className="project-body">
+        <div className="project-title-row">
+          <h3>{title}</h3>
+          {live && (
+            <span className="live-badge">
+              <span className="live-dot" />
+              Live
+            </span>
+          )}
+        </div>
+        <p className="project-desc">{description}</p>
+        <div className="project-tags">
+          {tags.map((t) => (
+            <span key={t} className={`tag tag-${tagColor(t)}`}>{t}</span>
+          ))}
+        </div>
+        {slug ? (
+          <Link className="project-link" to={`/projects/${slug}`}>Read the story →</Link>
+        ) : (
+          <a className="project-link" href={link} target="_blank" rel="noopener noreferrer">
+            {linkLabel} →
+          </a>
+        )}
+      </div>
+    </div>
   );
 }
