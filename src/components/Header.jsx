@@ -14,7 +14,7 @@ export default function Header() {
       </p>
       <p className="hero-meta">Based in Massachusetts. CS, Worcester State &apos;25.</p>
       <div className="hero-ctas">
-        <Link to="/projects" className="btn-primary">See the work →</Link>
+        <Link to="/projects" className="btn-primary">See the Projects →</Link>
         <a href="mailto:gcasiano21@gmail.com" className="btn-outline">Email me</a>
       </div>
       <div className="hero-social">
